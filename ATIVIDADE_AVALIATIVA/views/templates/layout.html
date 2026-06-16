@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Cinema{% endblock %}</title>
+</head>
+<body>
+
+    <nav>
+        <a href="{{ url_for('cinema.index') }}">
+            Cinema
+        </a>
+    </nav>
+
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
